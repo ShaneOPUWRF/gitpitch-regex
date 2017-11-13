@@ -52,8 +52,8 @@ Greedy Quantifiers
 
 +++
 
-* * matches any or none
-  * a* matches '', 'a', or 'aaaaaaaaaa'
+* \* matches any or none
+  * a\* matches '', 'a', or 'aaaaaaaaaa'
 * + matches 1 or more
   * a+ matches 'a', 'aaaaaaaa', but not ''
 * ? matches 1 or less
@@ -81,10 +81,10 @@ Hold on to your butts.
 
 +++
 
-* * ? matches the fewest number of characters to make it true
-  * .* on 'Hello, World' matches 'Hello, World'
-  * .* ? on 'Hello, World' matches 'H'
-* +? is the same as * ? except with a minimum of 1
+* \*? matches the fewest number of characters to make it true
+  * .\* on 'Hello, World' matches 'Hello, World'
+  * .\*? on 'Hello, World' matches 'H'
+* +? is the same as \*? except with a minimum of 1
 * ?? returns the string less the quantified bit
   * humans? matches to "humans"
   * humans?? matches to "human"
@@ -98,7 +98,7 @@ Positions
 
 * The most commonly used are ^ to indicate the beginning of a line, and $ to indicate the end
   * ^a means the line must start with an 'a'
-  * ^a.* b$ means the line must start with an 'a' and end with a 'b'
+  * ^a.\*b$ means the line must start with an 'a' and end with a 'b'
 
 +++
 

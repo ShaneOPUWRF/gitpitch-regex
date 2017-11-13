@@ -94,7 +94,7 @@ Hold on to your butts.
 
 Positions
 
----
++++
 
 * The most commonly used are ^ to indicate the beginning of a line, and $ to indicate the end
   * ^a means the line must start with an 'a'
@@ -113,4 +113,60 @@ Other weird ones:
 
 ---
 
+Looking Around
+
++++
+
+Look Aheads
+
+* (?=) matches the _previous_ item if the item in the parenthesis matches the following characters
+  * w(?=\d{7}) will match the 'w' ONLY if it is followed by 7 digits
+* (?!) Matches the previous item only if the item in the perenthesis doesn't match the following characters
+  * w(?!\d{7}) will match the 'w' unless it is followed by 7 digits
+  
++++
+
+Look Behinds
+
+* Not supported in many languages
+* Performance usually (relatively) sucks
+
++++
+
+* (?<=) Matches the previous item if the item is not preceeded by the parenthsised item
+  * day(?<=good ) will only match the word 'day' if it is preceeded by 'good '
+* (?<!) Negates the above
+
+---
+
+Capturing
+
++++
+
+* () groups the surrouded items in what is called a capture group
+* (?:) creates a non-capture group
+  * (?:ab){3} matches 'ababab', but doesn't caputure it
+
++++
+
+What can capture groups do for you?
+
++++
+
+Capture groups can be used to reference already matched values
+
+* 'Hello (.\*?), your name is \1'
+
++++
+
+Capture groups may also be used in programming languages and other tools, as you will see.
+
+---
+
+Activities 
+
+[https://alf.nu/RegexGolf]
+[https://regexcrossword.com/]
+
+---
 Presentation by Shane O'Malley-Potting

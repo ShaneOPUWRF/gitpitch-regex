@@ -6,7 +6,18 @@ What is a regular expression?
 
 +++
 
-* A way of identifying/codifying a series of characters
+A string of text that allows you to create patterns that help match, locate, and manage text. 
+(https://www.computerhope.com/jargon/r/regex.htm)
+
++++
+
+We'll make /[NPW].\*(?:[sno])(?= ) \d{1,2}/ match
+
+Nintendo 64, Playstation 4, and Windows 10
+
+But not 
+
+N64, PS4, Wii U, or Win10 
 
 ---
 

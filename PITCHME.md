@@ -13,11 +13,16 @@ A string of text that allows you to create patterns that help match, locate, and
 
 We'll make /[NPW].\*(?:[sno])(?= ) \d{1,2}/ match
 
-Nintendo 64, Playstation 4, and Windows 10
+* Nintendo 64
+* Playstation 4
+* Windows 10
 
 But not 
 
-N64, PS4, Wii U, or Win10 
+* Comodore 64
+* Xbox 360
+* Wii U
+* Gameboy 3DS
 
 ---
 
